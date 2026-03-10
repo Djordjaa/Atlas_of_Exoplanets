@@ -1,19 +1,21 @@
-# Atlas_of_Exoplanets
-Progetto 1 – La conquista dello spazio
+# Atlas_of_Exoplanets  
+Progetto 1 – La conquista dello spazio  
 Corso di Interaction Design
 
 
-Il Concetto
+Il Concetto  
 Il NASA Exoplanet Archive contiene oltre 6000 pianeti confermati, con dati su temperatura, dimensioni e distanza. Purtroppo, però, è uno strumento per ricercatori: tabelle, parametri tecnici, nessun contesto narrativo.
 Con questo progetto vorrei trasformare quei dati in un'esperienza divulgativa e interattiva, in cui l'utente impara cosa sono gli esopianeti, come vengono scoperti, e può anche esplora liberamente l'archivio filtrando per temperatura, dimensione, distanza e anno di scoperta. L'obiettivo è far capire visivamente quanti di quei 6.000 pianeti si trovano nella zona abitabile e quanti no.
 
-Target: pubblico generalista, persone curiose, appassionati di spazio.
+
+Target: pubblico generalista, persone curiose, appassionati di spazio.  
 Lingua: Inglese.
 
-I Dati
-Fonte: NASA Exoplanet Archive — archivio ufficiale NASA.
-Formato: CSV esportato direttamente dalla piattaforma.
-Parametri scelti:
+
+I Dati  
+Fonte: NASA Exoplanet Archive — archivio ufficiale NASA.  
+Formato: CSV esportato direttamente dalla piattaforma.  
+Parametri scelti:  
 | Parametro | Descrizione | Uso nel progetto |
 | :--- | :--- | :--- |
 | `pl_name` | Nome del pianeta | Schede di dettaglio, sistemi celebri |
