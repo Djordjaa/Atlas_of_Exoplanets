@@ -15,6 +15,7 @@ Fonte: NASA Exoplanet Archive — archivio ufficiale NASA.
 Formato: CSV esportato direttamente dalla piattaforma.
 Parametri scelti:
 | Parametro | Descrizione | Uso nel progetto |
+| :--- | :--- | :--- |
 | `pl_name` | Nome del pianeta | Schede di dettaglio, sistemi celebri |
 | `pl_rade` | Raggio in raggi terrestri | Dimensione visiva, confronto con la Terra |
 | `pl_eqt` | Temperatura di equilibrio stimata (K) | Colore, filtri di abitabilità |
