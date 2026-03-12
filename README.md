@@ -16,7 +16,7 @@ Lingua
 Inglese.
 
 
-Obiettivi  
+Obiettivi
 - Far capire cosa sono gli esopianeti e che ne esistono migliaia
 - Spiegare come la NASA li trova
 - Mostrare visivamente quanti sono e che caratteristiche hanno
