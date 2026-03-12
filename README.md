@@ -19,6 +19,7 @@ Inglese.
 Obiettivi  
 - Far capire cosa sono gli esopianeti e che ne esistono migliaia
 - Spiegare come la NASA li trova
+- Mostrare visivamente negli anni quanti se ne sono scoperti
 - Mostrare visivamente quanti sono e che caratteristiche hanno
 - Far emergere da quella visualizzazione quanti sono abitabili e perché è raro
 - Rispondere implicitamente alla domanda: perché si fa questa ricerca
