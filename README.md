@@ -8,8 +8,20 @@ Il NASA Exoplanet Archive contiene oltre 6000 pianeti confermati, con dati su te
 Con questo progetto vorrei trasformare quei dati in un'esperienza divulgativa e interattiva, in cui l'utente impara cosa sono gli esopianeti, come vengono scoperti, e può anche esplorare liberamente l'archivio filtrando per temperatura, dimensione, distanza e anno di scoperta. L'obiettivo è far capire visivamente quanti di quei 6.000 pianeti si trovano nella zona abitabile e quanti no.
 
 
-Target: pubblico generalista, persone curiose, appassionati di spazio.  
-Lingua: Inglese.
+Target  
+pubblico generalista, persone curiose, appassionati di spazio.  
+
+
+Lingua  
+Inglese.
+
+
+Obiettivi  
+- Far capire cosa sono gli esopianeti e che ne esistono migliaia
+- Spiegare come la NASA li trova
+- Mostrare visivamente quanti sono e che caratteristiche hanno
+- Far emergere da quella visualizzazione quanti sono abitabili e perché è raro
+- Rispondere implicitamente alla domanda: perché si fa questa ricerca
 
 
 I Dati  
