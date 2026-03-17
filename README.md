@@ -1,4 +1,4 @@
-# Atlas_of_Exoplanets  
+# Other_Worlds  
 Progetto 1 – La conquista dello spazio  
 Corso di Interaction Design
 
