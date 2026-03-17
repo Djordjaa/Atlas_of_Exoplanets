@@ -51,7 +51,6 @@ TRAPPIST-1e
 
 
 **Struttura e Interazione**  
-
 Il sito è una pagina singola a scroll orizzontale (da decidere) e occupa l’intero schermo.
   
 **Intro**  
