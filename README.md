@@ -50,14 +50,14 @@ Kepler-186f
 TRAPPIST-1e  
 
 
-**Struttura e Interazione**
+**Struttura e Interazione**  
 
 Il sito è una pagina singola a scroll orizzontale (da decidere) e occupa l’intero schermo.
   
-**Intro**
+**Intro**  
 Schermata di apertura con titolo, una frase e il numero totale di esopianeti confermati, con una breve spiegazione degli esopianeti.
   
-**L'esperienza**
+**L'esperienza**  
 Scena 3D navigabile con Three.js. I pianeti sono posizionati nello spazio come sfere con colori e dimensioni basati sui dati reali. L’utente si muove tra un pianeta e l’altro con scroll orizzontale o frecce. Cliccando su un pianeta appare una scheda con i dati principali e il confronto con la Terra. Idealmente, alcuni pianeti hanno animazioni legate alla loro peculiarità, come le particelle di ferro su WASP-76b.
   
 **Fine**
