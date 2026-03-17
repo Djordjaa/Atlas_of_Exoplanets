@@ -39,16 +39,16 @@ Dato aggiuntivo calcolato: tempo di viaggio dalla Terra a diverse velocità
 
 **I Pianeti**  
 La selezione è composta da 10 pianeti più la Terra come punto di partenza. Ogni pianeta rappresenta una categoria diversa di “impossibile”, fino ad arrivare ai due più simili alla Terra conosciuti:  
-KELT-9b  
-WASP-76b  
-HD 189733b  
-WASP-12b  
-Kepler-16b  
-TOI-3757b  
+KELT-9 b  
+WASP-76 b  
+HD 189733 b  
+WASP-12 b  
+Kepler-16 b  
+TOI-3757 b  
 55 Cancri e  
-TrES-2bIl  
-Kepler-186f  
-TRAPPIST-1e  
+TrES-2 b  
+Kepler-186 f  
+TRAPPIST-1 e  
 
 
 **Struttura e Interazione**  
