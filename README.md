@@ -15,7 +15,7 @@ pubblico generalista, persone curiose, appassionati di spazio.
 Inglese.
 
 
-**Obiettivi**    
+**Obiettivi**  
 - Far capire cosa sono gli esopianeti e che ne esistono migliaia 
 - Far emergere da quella visualizzazione la loro diversità (temperatura, dimensioni, condizioni) e la rarità di quelli abitabili
 - Rispondere implicitamente alla domanda: perché si fa questa ricerca, a cosa serve studiare gli esopianeti
