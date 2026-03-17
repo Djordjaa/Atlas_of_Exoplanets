@@ -16,9 +16,9 @@ Inglese.
 
 
 **Obiettivi**  
-- Far capire cosa sono gli esopianeti e che ne esistono migliaia 
-- Far emergere da quella visualizzazione la loro diversità (temperatura, dimensioni, condizioni) e la rarità di quelli abitabili
-- Rispondere implicitamente alla domanda: perché si fa questa ricerca, a cosa serve studiare gli esopianeti
+    - Far capire cosa sono gli esopianeti e che ne esistono migliaia  
+    - Far emergere da quella visualizzazione la loro diversità (temperatura, dimensioni, condizioni) e la rarità di quelli abitabili  
+    - Rispondere implicitamente alla domanda: perché si fa questa ricerca, a cosa serve studiare gli esopianeti  
 
 
 **I Dati**  
@@ -38,14 +38,15 @@ Dato aggiuntivo calcolato: tempo di viaggio dalla Terra a diverse velocità
 
 
 **I Pianeti**  
-La selezione è composta da 9 pianeti più la Terra come punto di partenza. Ogni pianeta rappresenta una categoria diversa di “impossibile”, fino ad arrivare ai due più simili alla Terra conosciuti:
-Terra  
+La selezione è composta da 10 pianeti più la Terra come punto di partenza. Ogni pianeta rappresenta una categoria diversa di “impossibile”, fino ad arrivare ai due più simili alla Terra conosciuti:  
 KELT-9b  
 WASP-76b  
 HD 189733b  
 WASP-12b  
 Kepler-16b  
 TOI-3757b  
+55 Cancri e  
+TrES-2bIl  
 Kepler-186f  
 TRAPPIST-1e  
 
@@ -59,5 +60,5 @@ Schermata di apertura con titolo, una frase e il numero totale di esopianeti con
 **L'esperienza**  
 Scena 3D navigabile con Three.js. I pianeti sono posizionati nello spazio come sfere con colori e dimensioni basati sui dati reali. L’utente si muove tra un pianeta e l’altro con scroll orizzontale o frecce. Cliccando su un pianeta appare una scheda con i dati principali e il confronto con la Terra. Idealmente, alcuni pianeti hanno animazioni legate alla loro peculiarità, come le particelle di ferro su WASP-76b.
   
-**Fine**
-Una schermata finale: questi sono 9 pianeti su 6.138 confermati.
+**Fine**  
+Alla fine una schermata finale in cui si visualizzano i 10 pianeti su 6.138 confermati (da decidere).
