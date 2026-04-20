@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTHER WORLDS — NASA Exoplanet Archive</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%2303030c'/><circle cx='50' cy='50' r='22' fill='%23f0f0e8'/><ellipse cx='50' cy='50' rx='44' ry='16' fill='none' stroke='%23f0f0e8' stroke-width='3.5' opacity='0.5'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,800;1,300&display=swap"
+      rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <span class="nav-title">OTHER WORLDS</span>
+      <div class="nav-links">
+        <a href="#" id="nav-about">ABOUT</a>
+        <a href="#" id="nav-sources">SOURCES</a>
+      </div>
+    </nav>
+
+    <!-- INTRO OVERLAY -->
+    <div id="intro-overlay">
+      <div id="intro-text-container">
+        <p class="intro-line" id="line-1"></p>
+        <p class="intro-line" id="line-2"></p>
+        <p class="intro-line" id="line-3"></p>
+        <p class="intro-line" id="line-4"></p>
+      </div>
+    </div>
+
+    <!-- THREE.JS CANVAS -->
+    <canvas id="three-canvas"></canvas>
+
+    <!-- PLANET DETAIL PANEL -->
+    <div id="planet-detail" class="hidden">
+      <div id="planet-atmosphere"></div>
+
+      <div id="hud-container" data-id="000">
+        <div id="hud-container-fade"></div>
+        <div id="hud-type"></div>
+        <div id="hud-name"></div>
+        <div id="hud-tagline"></div>
+        <div id="hud-data"></div>
+        <a id="hud-nasa-link" href="#" target="_blank" rel="noopener noreferrer">
+          <div class="link-row"><span class="bracket">[ </span>NASA ARCHIVE<span class="bracket"> ]</span></div>
+          <span class="nasa-sub">opens nasa.gov in a new tab</span>
+        </a>
+      </div>
+
+      <div id="exit-hint">
+        <span class="mono-small">
+          <span class="bracket">[ </span>ESC<span class="bracket"> ]</span> RETURN TO CLUSTER
+        </span>
+      </div>
+    </div>
+
+    <!-- BOTTOM PLANET NAVIGATION (temperature-sorted) -->
+    <div id="radar-dots" class="hidden"></div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
