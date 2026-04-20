@@ -44,7 +44,7 @@ const PLANETS = [
     type: 'Hot Jupiter',
     color: '#4A7FD4',
     tempK: 1200, radiusEarth: 12.7, massEarth: 359,
-    tagline: 'The most beautiful planet we know, but it will kill you in seconds.',
+    tagline: 'The most beautiful planet we know, but it will kill you in seconds with its glass rain',
     data: [
       { label: 'TEMPERATURE',  value: '1 200 K',       valueAlt: '+927°C', human: 'Silicate glass rains sideways at extreme speeds' },
       { label: 'RADIUS',       value: '12.7 R⊕',       human: 'Slightly larger than Jupiter with a confirmed deep cobalt blue colour' },
