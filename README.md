@@ -49,7 +49,7 @@ L’interfaccia è un **canvas 3D a schermo intero** con gli 11 pianeti disposti
 
 I termini tecnici sono cliccabili tramite **badge [?]** che aprono tooltip contestuali. Questo sistema permette di accedere a definizioni semplificate (come il metodo di scoperta) senza appesantire la lettura principale. Per tornare alla visualizzazione completa si utilizza il tasto `ESC` o la `X` in alto a destra.
 
-**[VIDEO DEL FLUSSO COMPLETO]**
+**[VIDEO DA CARICARE]**
 
 ## Tecnologia usata
 
