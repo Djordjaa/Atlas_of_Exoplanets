@@ -25,7 +25,8 @@ In termini di scelte visive:
 - **Tipografia:** Caratteri tipografici monospaziati, nello specifico **IBM Plex Mono** e **IBM Plex Sans** per il testo descrittivo.
 - **Visualizzazione:** Gli esopianeti non hanno fotografie e la NASA stessa utilizza solo delle possibili rappresentazioni; di conseguenza non sono state usate texture illustrative, ma gli **shader** sono stati creati direttamente dai parametri fisici disponibili nell’archivio NASA.
 
-[**SCREENSHOT CLUSTER**]
+<img width="1728" height="962" alt="Overview" src="https://github.com/user-attachments/assets/bb9234ac-9873-4539-83ea-69554d35482b" />
+
 
 ## Riferimenti progettuali
 
@@ -42,7 +43,9 @@ L’interfaccia è un **canvas 3D a schermo intero** con gli 11 pianeti disposti
 - **Click:** La visuale esegue uno zoom sul pianeta, apre un pannello dati sul lato sinistro e nasconde gli altri elementi.
 - **Pannello Dati:** Segue una gerarchia fissa (tipo di pianeta, nome, frase descrittiva e dati fisici). Include una barra della temperatura comparativa rispetto alla Terra e un link diretto al NASA Exoplanet Archive.
 
-**[SCREENSHOT PANNELLO DATI]**
+<img width="1728" height="962" alt="Planet_Detail_1" src="https://github.com/user-attachments/assets/43d9dd3b-86e9-4724-80c9-a0a646307b35" />
+<img width="1728" height="962" alt="Planet_Detail_tooltip" src="https://github.com/user-attachments/assets/afeccef3-6d5a-44bd-bf63-d5f1b0c37bd2" />
+
 
 I termini tecnici sono cliccabili tramite **badge [?]** che aprono tooltip contestuali. Questo sistema permette di accedere a definizioni semplificate (come il metodo di scoperta) senza appesantire la lettura principale. Per tornare alla visualizzazione completa si utilizza il tasto `ESC` o la `X` in alto a destra.
 
