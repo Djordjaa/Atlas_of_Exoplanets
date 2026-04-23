@@ -10,7 +10,7 @@ const PLANETS = [
     tempK: 4600, radiusEarth: 21.2, massEarth: 915.8,
     tagline: 'Hotter than most stars. Its atmosphere is evaporating',
     data: [
-      { label: 'TEMPERATURE',  value: '4 600 K',       valueAlt: '+4 327°C', human: 'Hotter than many stars where iron exists only as gas' },
+      { label: 'TEMPERATURE',  value: "4'600 K",       valueAlt: "+4'327°C", human: 'Hotter than many stars where iron exists only as gas' },
       { label: 'RADIUS',       value: '21.2 R⊕',       human: 'Over twice the size of Jupiter and one of the largest known exoplanets' },
       { label: 'MASS',         value: '915.8 M⊕',        human: '' },
       { label: 'ORBITAL PERIOD', value: '1.5 days',   human: '' },
@@ -28,7 +28,7 @@ const PLANETS = [
     tempK: 2400, radiusEarth: 20.8, massEarth: 284,
     tagline: 'On the night side it rains molten iron',
     data: [
-      { label: 'TEMPERATURE',  value: '2 400 K',       valueAlt: '+2 127°C', human: 'Iron vaporises on the day side and rains on the night side' },
+      { label: 'TEMPERATURE',  value: "2'400 K",       valueAlt: "+2'127°C", human: 'Iron vaporises on the day side and rains on the night side' },
       { label: 'RADIUS',       value: '20.8 R⊕',       human: '' },
       { label: 'MASS',         value: '284 M⊕',        human: 'Slightly lighter than our own gas giant' },
       { label: 'ORBITAL PERIOD', value: '1.8 days',   human: 'Tidally locked with one face always pointing toward its star' },
@@ -46,7 +46,7 @@ const PLANETS = [
     tempK: 1200, radiusEarth: 12.7, massEarth: 359,
     tagline: 'The most beautiful planet we know, but it will kill you in seconds with its glass rain',
     data: [
-      { label: 'TEMPERATURE',  value: '1 200 K',       valueAlt: '+927°C', human: 'Silicate glass rains sideways at extreme speeds' },
+      { label: 'TEMPERATURE',  value: "1'200 K",       valueAlt: '+927°C', human: 'Silicate glass rains sideways at extreme speeds' },
       { label: 'RADIUS',       value: '12.7 R⊕',       human: 'Slightly larger than Jupiter with a confirmed deep cobalt blue colour' },
       { label: 'MASS',         value: '359 M⊕',        human: '' },
       { label: 'ORBITAL PERIOD', value: '2.2 days',   human: '' },
@@ -65,7 +65,7 @@ const PLANETS = [
     tempK: 1200, radiusEarth: 15.3, massEarth: 474,
     tagline: 'Darker than anything we can make on Earth',
     data: [
-      { label: 'TEMPERATURE',  value: '1 200 K',       valueAlt: '+927°C', human: 'An inexplicably dark and hot abyss' },
+      { label: 'TEMPERATURE',  value: "1'200 K",       valueAlt: '+927°C', human: 'An inexplicably dark and hot abyss' },
       { label: 'ALBEDO',       value: '< 0.01',        human: 'Reflects almost no light' },
       { label: 'RADIUS',       value: '15.3 R⊕',       human: '' },
       { label: 'MASS',         value: '474 M⊕',        human: '' },
@@ -84,11 +84,11 @@ const PLANETS = [
     tempK: 2590, radiusEarth: 22, massEarth: 467,
     tagline: 'Its star is eating it alive. Every hour it loses mass it will never get back',
     data: [
-      { label: 'TEMPERATURE',  value: '2 590 K',       valueAlt: '+2 317°C', human: 'Tidally distorted into an egg shape by the gravity of its star' },
+      { label: 'TEMPERATURE',  value: "2'590 K",       valueAlt: "+2'317°C", human: 'Tidally distorted into an egg shape by the gravity of its star' },
       { label: 'RADIUS',       value: '22 R⊕',       human: 'Inflated by extreme tidal heating' },
       { label: 'MASS',         value: '467 M⊕',        human: '' },
       { label: 'ORBITAL PERIOD', value: '1.1 days',   human: 'One year lasts just over a single Earth day' },
-      { label: 'DISTANCE',     value: '1 393 ly',      human: '' },
+      { label: 'DISTANCE',     value: "1'393 ly",      human: '' },
       { label: 'DISCOVERED',   value: '2008',          human: 'Found via the Transit method by the WASP consortium' },
     ],
     nasa: 'https://science.nasa.gov/exoplanet-catalog/wasp-12-b/',
@@ -102,7 +102,7 @@ const PLANETS = [
     tempK: 2700, radiusEarth: 1.88, massEarth: 8.0,
     tagline: 'A year here lasts 18 hours. The surface is molten lava',
     data: [
-      { label: 'TEMPERATURE',  value: '2 700 K',       valueAlt: '+2 427°C', human: 'Surface rock is permanently molten creating a lava ocean' },
+      { label: 'TEMPERATURE',  value: "2'700 K",       valueAlt: "+2'427°C", human: 'Surface rock is permanently molten creating a lava ocean' },
       { label: 'RADIUS',       value: '1.88 R⊕',       human: 'A rocky super-Earth denser and heavier than our planet' },
       { label: 'MASS',         value: '8.0 M⊕',        human: '' },
       { label: 'ORBITAL PERIOD', value: '0.7 days',    human: '' },
@@ -209,7 +209,8 @@ const PLANETS = [
 /* ── HELPERS ────────────────────────────────────────────────── */
 function kToCDisplay(k) {
   const c = Math.round(k - 273);
-  return c >= 0 ? `+${c.toLocaleString('en-US')}°C` : `${c.toLocaleString('en-US')}°C`;
+  const formatted = String(Math.abs(c)).replace(/\B(?=(\d{3})+(?!\d))/g, "'");
+  return c >= 0 ? `+${formatted}°C` : `-${formatted}°C`;
 }
 
 /* ── STATE ──────────────────────────────────────────────────── */
@@ -561,7 +562,7 @@ pGeo.setAttribute('size',     new THREE.BufferAttribute(pSz, 1));
 const particleMat = new THREE.ShaderMaterial({
   vertexColors: true, transparent: true, uniforms: { opacity: { value: 0.0 } },
   vertexShader: `attribute float size; varying vec3 vColor; void main() { vColor = color; vec4 mvPos = modelViewMatrix * vec4(position, 1.0); gl_PointSize = size * (300.0 / -mvPos.z); gl_Position = projectionMatrix * mvPos; }`,
-  fragmentShader: `varying vec3 vColor; uniform float opacity; void main() { float d = length(gl_PointCoord - 0.5); if (d > 0.5) discard; float a = smoothstep(0.5, 0.08, d) * opacity; gl_FragColor = vec4(vColor, a); }`,
+  fragmentShader: `varying vec3 vColor; uniform float opacity; void main() { float d = length(gl_PointCoord - 0.5); if (d > 0.45) discard; float a = smoothstep(0.45, 0.05, d) * opacity; gl_FragColor = vec4(vColor, a); }`,
 });
 const particleCloud = new THREE.Points(pGeo, particleMat);
 scene.add(particleCloud);
@@ -575,20 +576,20 @@ fillLight.position.set(-5, -3, -5); scene.add(fillLight);
 
 /* ── 1D HORIZONTAL PLOT: FULL PANORAMIC SPREAD ────────────── */
 function getVisualScale(r) {
-  return (0.04 + (Math.pow(r, 0.4) * 0.035)) * 1.35;
+  return 0.18;
 }
 
 const PERFECT_X = {
-  7: -2.60,  // Kepler-16 b 
-  9: -2.10,  // Kepler-186 f 
-  8: -1.75,  // TRAPPIST-1 e 
-  10: -1.35, // Gliese 1214 b
-  6: -0.85,  // TOI-3757 b
-  2: -0.30,  // HD 189733 b
-  3:  0.25,  // TrES-2 b
-  1:  0.80,  // WASP-76 b
-  4:  1.475,  // WASP-12 b 
-  5:  2.05,  // 55 Cancri e
+  7: -2.50,  // Kepler-16 b 
+  9: -2.00,  // Kepler-186 f 
+  8: -1.50,  // TRAPPIST-1 e 
+  10: -1.00, // Gliese 1214 b
+  6: -0.50,  // TOI-3757 b
+  2:  0.00,  // HD 189733 b
+  3:  0.50,  // TrES-2 b
+  1:  1.00,  // WASP-76 b
+  4:  1.55,  // WASP-12 b
+  5:  2.10,  // 55 Cancri e
   0:  2.60   // KELT-9 b
 };
 
@@ -707,7 +708,7 @@ radarOrder.forEach(planet => {
   const item = document.createElement('button');
   item.className = 'radar-item';
   item.dataset.planetId = planet.id;
-item.innerHTML = `<span class="radar-name">${planet.name}</span><span class="radar-temp">${String(planet.tempK).replace(/\B(?=(\d{3})+(?!\d))/g, '\u2009')} K</span>`;
+item.innerHTML = `<span class="radar-name">${planet.name}</span><span class="radar-temp">${String(planet.tempK).replace(/\B(?=(\d{3})+(?!\d))/g, "'")} K</span>`;
   item.setAttribute('title', `${planet.name} — ${planet.type}`);
   item.addEventListener('click', () => openPlanet(planet.id));
   radarContainer.appendChild(item);
@@ -722,7 +723,7 @@ axisLegend.innerHTML = `
     <div class="axis-line-x"></div>
     <div class="axis-labels-x">
       <span>← cooler</span>
-      <span class="axis-title">SURFACE TEMPERATURE (log scale)</span>
+      <span class="axis-title">SURFACE TEMPERATURE</span>
       <span>hotter →</span>
     </div>
   </div>
@@ -766,7 +767,7 @@ aboutOverlay.innerHTML = `
         Each planet is positioned on the horizontal axis based on its surface temperature. The 11 planets shown were selected to represent the extraordinary diversity of worlds found: from rocky planets in the habitable zone to ultra-hot gas giants.
       </p>
       <div class="overlay-stat">
-        <span class="overlay-stat-number">6 160</span>
+        <span class="overlay-stat-number">6'160</span>
         <span class="overlay-stat-label">confirmed exoplanets<br>(Data: April 2026)</span>
       </div>
     </div>
@@ -830,7 +831,7 @@ document.getElementById('nav-sources').addEventListener('click', e => { e.preven
 
 /* ── INTRO ──────────────────────────────────────────────────── */
 const introLines = [
-  { el: document.getElementById('line-1'), text: '6 160 confirmed exoplanets' },
+  { el: document.getElementById('line-1'), text: "6'160 confirmed exoplanets" },
   { el: document.getElementById('line-2'), text: '11 distinct worlds were isolated' },
   { el: document.getElementById('line-3'), text: 'To map the true scale of galactic diversity' },
   { el: document.getElementById('line-4'), text: 'From habitable zones to extreme environments' },
@@ -1087,7 +1088,7 @@ function triggerAtmospherePreview(planet) {
 
   const atmLabels = {
     'iron-rain':  'Iron rain — night side',
-    'glass-wind': 'Glass wind — 8,700 km/h',
+    'glass-wind': "Glass wind — 8'700 km/h",
     'darkness':   'Near-zero albedo',
     'double-sun': 'Binary star glow',
   };
@@ -1309,7 +1310,7 @@ function applyPlanetCount() {
   
   if (!statNumber || !statLabel) return;
 
-  statNumber.textContent = '6 160';
+  statNumber.textContent = "6'160";
   statLabel.innerHTML = `confirmed exoplanets<br>(Data: April 2026)`;
 }
 
